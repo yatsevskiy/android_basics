@@ -9,7 +9,9 @@
         android:targetSdkVersion="8" />
 
     <application>
-        <service android:name=".MyService" />
+        <service
+            android:name=".MyService"
+            android:process=":remote" />
 
         <activity android:name=".ServiceStarter" >
             <intent-filter>
