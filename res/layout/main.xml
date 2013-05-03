@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/start_service" />
+
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/stop_service" />
+
+    <Button
+        android:id="@+id/bind"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/bind_to_service" />
+
+    <Button
+        android:id="@+id/unbind"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/unbind_from_service" />
+
+    <Button
+        android:id="@+id/register_client"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/register_client" />
+
+    <Button
+        android:id="@+id/unregister_client"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/unregister_client" />
+
+    <Button
+        android:id="@+id/send_broadcast_message"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/send_broadcast_message" />
+
+</LinearLayout>

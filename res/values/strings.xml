@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- sevices -->
+    <string name="service_started">service_started</string>
+    <string name="service_stoped">service_stoped</string>
+    <string name="title">title</string>
+    <string name="content">content</string>
+
+    <!-- sevices -->
+    <string name="start_service">Start service</string>
+    <string name="stop_service">Stop service</string>
+    <string name="bind_to_service">Bind to service</string>
+    <string name="unbind_from_service">Undind from service</string>
+    <string name="register_client">Register client</string>
+    <string name="unregister_client">Unregister client</string>
+    <string name="send_broadcast_message">Send broadcast message</string>
+
+    <!-- activiies -->
+    <string name="first_activity_title">This is first activity</string>
+    <string name="second_activity_title">This is second activity</string>
+
+</resources>
