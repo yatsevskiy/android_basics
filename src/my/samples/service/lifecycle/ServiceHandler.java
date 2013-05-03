@@ -43,8 +43,8 @@ public class ServiceHandler extends Handler {
 			case SEND_BROADCAST_MESSAGE :
 				for (Messenger client : clients) {
 					try {
-						client.send(Message
-								.obtain(null, SEND_BROADCAST_MESSAGE, msg.arg1, 0));
+						client.send(Message.obtain(null,
+								SEND_BROADCAST_MESSAGE, msg.arg1, 0));
 					} catch (RemoteException e) {
 						deadClients.add(client);
 					}
