@@ -45,8 +45,6 @@ public class MyService extends Service {
 	@Override
 	public int onStartCommand(Intent intent, int flags, int startId) {
 		onInvoke(0);
-		Log.d(logTag(),
-				"-------------------------------------------------------------------------");
 		return super.onStartCommand(intent, flags, startId);
 	}
 
@@ -55,8 +53,6 @@ public class MyService extends Service {
 	@Override
 	public IBinder onBind(Intent intent) {
 		onInvoke(0);
-		Log.d(logTag(),
-				"-------------------------------------------------------------------------");
 		return messenger.getBinder();
 
 	}
@@ -64,8 +60,6 @@ public class MyService extends Service {
 	@Override
 	public boolean onUnbind(Intent intent) {
 		onInvoke(0);
-		Log.d(logTag(),
-				"-------------------------------------------------------------------------");
 		return super.onUnbind(intent);
 	}
 
@@ -74,7 +68,5 @@ public class MyService extends Service {
 		super.onDestroy();
 		onInvoke(0);
 		mNotification.cancel(R.string.service_started);
-		Log.d(logTag(),
-				"-------------------------------------------------------------------------");
 	}
 }
