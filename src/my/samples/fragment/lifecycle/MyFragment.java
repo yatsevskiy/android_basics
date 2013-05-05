@@ -1,7 +1,10 @@
 package my.samples.fragment.lifecycle;
 
+import java.util.Random;
+
 import my.samples.service.lifecycle.R;
 import android.app.Activity;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.util.Log;
@@ -49,9 +52,14 @@ public class MyFragment extends Fragment {
 
 		View v = inflater.inflate(R.layout.fragment, container, false);
 
+		Random rnd = new Random(System.currentTimeMillis());
+
+		v.findViewById(R.id.textbox).setBackgroundColor(
+				Color.argb(255, rnd.nextInt(256), rnd.nextInt(256),
+						rnd.nextInt(256)));
+
 		return v;
 	}
-
 	@Override
 	public void onActivityCreated(Bundle savedInstanceState) {
 		super.onActivityCreated(savedInstanceState);

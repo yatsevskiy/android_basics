@@ -36,4 +36,11 @@
         android:layout_gravity="center"
         android:text="@string/hide_fragment" />
 
+    <Button
+        android:id="@+id/push_fragment"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/push_fragment" />
+
 </LinearLayout>

@@ -4,6 +4,8 @@ import my.samples.fragment.lifecycle.MyFragment;
 import my.samples.service.lifecycle.R;
 import android.os.Bundle;
 import android.support.v4.app.FragmentTransaction;
+import android.view.View;
+import android.view.View.OnClickListener;
 
 public class MySecondActivity extends MyBaseActivity {
 	private static final String LOG_TAG = MySecondActivity.class
@@ -26,5 +28,18 @@ public class MySecondActivity extends MyBaseActivity {
 		FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
 		ft.add(R.id.my_fragment_layout_1, new MyFragment());
 		ft.commit();
+
+		findViewById(R.id.push_fragment).setOnClickListener(
+				new OnClickListener() {
+					@Override
+					public void onClick(View v) {
+						FragmentTransaction ft = getSupportFragmentManager()
+								.beginTransaction();
+						ft.replace(R.id.my_fragment_layout_1, new MyFragment());
+						ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
+						ft.addToBackStack(null);
+						ft.commit();
+					}
+				});
 	}
 }
