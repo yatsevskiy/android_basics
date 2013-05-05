@@ -1,5 +1,6 @@
 package my.samples.fragment.lifecycle;
 
+import my.samples.service.lifecycle.R;
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -45,7 +46,10 @@ public class MyFragment extends Fragment {
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 		onInvoke();
-		return super.onCreateView(inflater, container, savedInstanceState);
+
+		View v = inflater.inflate(R.layout.fragment, container, false);
+
+		return v;
 	}
 
 	@Override

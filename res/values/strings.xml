@@ -19,5 +19,7 @@
     <!-- activiies -->
     <string name="first_activity_title">This is first activity</string>
     <string name="second_activity_title">This is second activity</string>
+    <string name="email_hint">TODO</string>
+    <string name="hide_fragment">TODO</string>
 
 </resources>

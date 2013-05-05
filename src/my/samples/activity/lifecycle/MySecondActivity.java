@@ -24,7 +24,7 @@ public class MySecondActivity extends MyBaseActivity {
 		setContentView(R.layout.main2);
 
 		FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-		ft.add(R.id.my_fragment_layout, new MyFragment());
+		ft.add(R.id.my_fragment_layout_1, new MyFragment());
 		ft.commit();
 	}
 }
