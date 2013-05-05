@@ -1,10 +1,10 @@
 package my.samples.activity.lifecycle;
 
-import android.app.Activity;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
 import android.util.Log;
 
-public abstract class MyBaseActivity extends Activity {
+public abstract class MyBaseActivity extends FragmentActivity {
 
 	protected abstract String logTag();
 
