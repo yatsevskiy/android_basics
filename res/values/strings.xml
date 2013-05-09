@@ -25,5 +25,7 @@
     <string name="hide_fragment">TODO</string>
     <string name="push_fragment">TODO</string>
     <string name="restart">TODO</string>
+    <string name="show_dialog">TODO</string>
+    <string name="alert_dialog_fragment_title">TODO</string>
 
 </resources>

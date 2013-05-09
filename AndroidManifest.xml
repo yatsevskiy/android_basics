@@ -20,7 +20,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="my.samples.activity.lifecycle.MyThirdActivity" >
+        <activity android:name="my.samples.fragment.lifecycle.dialogs.MyDialogFragmentActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
