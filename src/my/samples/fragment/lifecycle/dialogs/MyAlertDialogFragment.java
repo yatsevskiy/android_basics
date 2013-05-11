@@ -11,13 +11,13 @@ public class MyAlertDialogFragment extends DialogFragment {
 
 	@Override
 	public Dialog onCreateDialog(Bundle savedInstanceState) {
-		DialogInterface.OnClickListener onClickListener = new DialogInterface.OnClickListener() {
+		DialogInterface.OnClickListener aPositiveListener = new DialogInterface.OnClickListener() {
 			@Override
 			public void onClick(DialogInterface dialog, int which) {
 				// TODO Auto-generated method stub
 			}
 		};
-		DialogInterface.OnClickListener onClickListener2 = new DialogInterface.OnClickListener() {
+		DialogInterface.OnClickListener aNegativeListener = new DialogInterface.OnClickListener() {
 			@Override
 			public void onClick(DialogInterface dialog, int which) {
 				// TODO Auto-generated method stub
@@ -27,8 +27,8 @@ public class MyAlertDialogFragment extends DialogFragment {
 		Builder builder = new AlertDialog.Builder(getActivity())
 				.setIcon(android.R.drawable.ic_dialog_alert)
 				.setTitle(getArguments().getInt("title"))
-				.setPositiveButton(android.R.string.yes, onClickListener)
-				.setNegativeButton(android.R.string.no, onClickListener2);
+				.setPositiveButton(android.R.string.yes, aPositiveListener)
+				.setNegativeButton(android.R.string.no, aNegativeListener);
 
 		return builder.create();
 	}

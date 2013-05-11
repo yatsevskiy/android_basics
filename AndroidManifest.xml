@@ -13,6 +13,13 @@
             android:name=".MyService"
             android:process=":remote" />
 
+        <provider
+            android:name="my.samples.database.lifecycle.MyContentProvider"
+            android:authorities="my.samples.database.lifecycle"
+            android:exported="false"
+            android:multiprocess="false" >
+        </provider>
+
         <activity android:name=".ServiceStarter" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,7 +27,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="my.samples.fragment.lifecycle.dialogs.MyDialogFragmentActivity" >
+        <activity android:name="my.samples.database.lifecycle.ContantProviderActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
